@@ -82,6 +82,9 @@ form i{
     justify-content: center;
     border-radius: 7px 0px 0px 7px;
 }
+form ul{
+    list-style: none;
+}
 input[type=radio]{
     color: #fff;
     background-color: var(--main-color);

@@ -35,7 +35,13 @@
             <div class="form-control">
                 <i class="fa-solid fa-shield-halved"></i>
                 <input type="password" name="personal-password" id="personal-password" placeholder="password">
-                <p></p>
+                <ul class="hide">
+                    <li id="capitals" class="failure">At least one uppercase</li>
+                    <li id="lowers" class="failure">At least one lowercase</li>
+                    <li id="number" class="failure">At least one number</li>
+                    <li id="specials" class="failure">At least one specials of (@.$/+_)</li>
+                    <li id="length" class="failure">More than 8 characters</li>
+                </ul>
             </div>
             <div class="form-control radios">
                 <div>
