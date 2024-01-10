@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+:root{
+    --main-color: rgb(60,77,181);
+    --text-color: rgb(76,76,76)
+}
+/*************************CUSTOM CLASSES***********************/
+.hide{
+    display: none;
+}
+.active-section{
+    background-color: rgb( 150, 150, 150);   
+}
+.failure{
+    color: rgb(180, 0, 0)
+}
+.success{
+    color: rgb(0, 78, 0)
+}
+/**************************************************************/
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#form-body{
+    width: 420px;
+    margin: auto;
+    background-color: rgb(235,235,235);
+    box-shadow: 0px 0px 7px rgb( 150, 150, 150);
+    padding: 20px;
+}
+.form-header{
+    text-align: center;
+    padding: 10px;
+}
+.form-section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.2rem;
+    border-top: .5px solid rgb(200,200,200);
+    border-bottom: .5px solid rgb(200,200,200);
+    width: 85%;
+    margin: auto
+}
+.form-section p{
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 25px;
+    margin: 0
+}
+form input{
+    width: 80%;
+    margin: 0;
+    padding: 14px;
+    border-radius: 0px 7px 7px 0px;
+    font-size: 1.2rem;
+    margin-left: -5px;
+    border: none;
+}
+form{
+    width: 80%;
+    margin: auto;
+}
+form > div{
+    margin-top: 20px;
+}
+form i{
+    padding: 18.5px 16px;
+    color: #fff;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    border-radius: 7px 0px 0px 7px;
+}
+input[type=radio]{
+    color: #fff;
+    background-color: var(--main-color);
+}
+.radios > div{
+    display: flex;
+    gap: 1rem
+}
+
+.terms-register p{
+    width: 65%;
+    font-size: .85rem;
+}
+.terms-register p a{
+    color: var(--main-color);
+}
+.terms-register button{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 7px 10px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+    <script src="https://kit.fontawesome.com/6c1ada6317.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="form-body">
+        <h1 class="form-header">Registration</h1>
+        <div class="form-section">
+            <div >
+                <p id="personal" class="active-section">Personal</p>
+            </div>
+            <div>
+                <p id="company">Company</p>
+            </div>        
+        </div>
+        <form action="" id="personal-form">
+            <div class="form-control">
+                <span><i class="fa-regular fa-envelope"></i></span>
+                <input type="email" name="personal-email" id="personal-email" placeholder="Email">
+                <p></p>
+            </div>
+            <div class="form-control">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="personal-name" id="personal-name" placeholder="Name">
+                <p></p>
+            </div>
+            <div class="form-control">
+                <i class="fa-solid fa-shield-halved"></i>
+                <input type="password" name="personal-password" id="personal-password" placeholder="password">
+                <p></p>
+            </div>
+            <div class="form-control radios">
+                <div>
+                    <input type="radio" name="gender" value="Male" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="Female" id="female">
+                    <label for="female">Female</label>
+                </div>
+                <p></p>
+            </div>
+            <div class="terms-register">
+                <p>By clicking Register, you agree on our <a href="http://">terms and conditions</a></p>
+                <button type="submit" disabled>Register</button>
+            </div>
+        </form>
+        <form action="" id="company-form" class="hide">             
+            <div class="form-control">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" name="company-email" id="company-email" placeholder="Company Email">
+            </div>
+            <div class="form-control">
+                <i class="fa-regular fa-building"></i>
+                <input type="text" name="company-name" id="company-name" placeholder="Company Name">
+            </div>
+            <div class="form-control">
+                <i class="fa-solid fa-shield-halved"></i>
+                <input type="password" name="company-password" id="company-password" placeholder="password">
+            </div>
+            <div class="form-control radios">
+                <div>
+                    <input type="radio" name="business" value="small" id="small">
+                    <label for="small">Small Business</label>
+                    <input type="radio" name="business" value="big" id="big">
+                    <label for="big">Big Business</label>
+                </div>
+                <p></p>
+            </div>
+            <div class="terms-register">
+                <p>By clicking Register, you agree on our <a href="http://">terms and conditions</a></p>
+                <button type="submit" disabled>Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
