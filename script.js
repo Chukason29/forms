@@ -47,11 +47,11 @@ const emailChecker = (email) =>{
     return message = emailRegex.test(email) ? 1 : 0
 }
 const nameChecker = (name) =>{
-    const nameRegex = /^[a-z]+[a-z_'- ]{4,29}$/i
+    const nameRegex = /^[a-z]+[a-z_' -]{4,29}$/i
     return message = nameRegex.test(name) ? 1 : 0
 }
 const passwordChecker = (password) => {
-    const passwordRegex = /^[@a-zA-Z0-9_. ]/
+    const passwordRegex = /^[@a-zA-Z0-9_. ]+[@a-zA-Z0-9_. ]/
     return message =passwordRegex.test(password) ? 1 : 0
 }
 personalEmail.addEventListener("keypress", (event) =>{
@@ -61,4 +61,8 @@ personalEmail.addEventListener("keypress", (event) =>{
 personalName.addEventListener("keypress", (event) =>{
     const element = document.querySelector("#personal-name ~ p")
     inputStatusMessage(element, nameChecker(personalName.value), "valid name", "invalid name")
+})
+personalPassword.addEventListener("keypress", (event) =>{
+    const element = document.querySelector("#personal-password ~ p")
+    inputStatusMessage(element,passwordChecker(personalPassword.value), "valid password", "invalid password")
 })
